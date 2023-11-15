@@ -193,10 +193,6 @@
             {
                 Console.WriteLine(f.ToString());
             }
-            catch (OverflowException e)
-            {
-                Console.WriteLine(e.ToString());
-            }
             catch (Exception f)
             {
                 Console.WriteLine("Caught exception:" + f.Message);
@@ -218,7 +214,7 @@
             }
             catch (Exception f)
             {
-                Console.WriteLine("Error:" + f.Message);
+                Console.WriteLine($"Error:" + f.Message);
                 throw;
             }
         }
